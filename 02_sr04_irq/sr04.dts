@@ -1,0 +1,5 @@
+sr04 {
+    compatible = "liuq,sr04";
+    trig-gpios = <&gpioa 5 GPIO_ACTIVE_HIGH>;
+    echo-gpios = <&gpioa 13 GPIO_ACTIVE_HIGH>;
+}
