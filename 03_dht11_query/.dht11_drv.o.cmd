@@ -1,8 +1,8 @@
-cmd_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o := arm-buildroot-linux-gnueabihf-gcc -Wp,-MD,/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/.dht11_drv.o.d  -nostdinc -isystem /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/8.4.0/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Wno-format-security -std=gnu89 -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wimplicit-fallthrough -Wno-unused-const-variable -fomit-frame-pointer -fno-var-tracking-assignments -g -fno-inline-functions-called-once -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned  -DMODULE  -DKBUILD_BASENAME='"dht11_drv"' -DKBUILD_MODNAME='"dht11_drv"' -c -o /home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o /home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.c
+cmd_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o := arm-buildroot-linux-gnueabihf-gcc -Wp,-MD,/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/.dht11_drv.o.d  -nostdinc -isystem /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/bin/../lib/gcc/arm-buildroot-linux-gnueabihf/8.4.0/include -I./arch/arm/include -I./arch/arm/include/generated  -I./include -I./arch/arm/include/uapi -I./arch/arm/include/generated/uapi -I./include/uapi -I./include/generated/uapi -include ./include/linux/kconfig.h -include ./include/linux/compiler_types.h -D__KERNEL__ -mlittle-endian -Wall -Wundef -Werror=strict-prototypes -Wno-trigraphs -fno-strict-aliasing -fno-common -fshort-wchar -fno-PIE -Werror=implicit-function-declaration -Werror=implicit-int -Wno-format-security -std=gnu89 -fno-dwarf2-cfi-asm -fno-ipa-sra -mabi=aapcs-linux -mfpu=vfp -funwind-tables -marm -Wa,-mno-warn-deprecated -D__LINUX_ARM_ARCH__=7 -march=armv7-a -msoft-float -Uarm -fno-delete-null-pointer-checks -Wno-frame-address -Wno-format-truncation -Wno-format-overflow -O2 --param=allow-store-data-races=0 -Wframe-larger-than=1024 -fstack-protector-strong -Wno-unused-but-set-variable -Wimplicit-fallthrough -Wno-unused-const-variable -fomit-frame-pointer -fno-var-tracking-assignments -g -fno-inline-functions-called-once -Wdeclaration-after-statement -Wvla -Wno-pointer-sign -Wno-stringop-truncation -fno-strict-overflow -fno-merge-all-constants -fmerge-constants -fno-stack-check -fconserve-stack -Werror=date-time -Werror=incompatible-pointer-types -Werror=designated-init -fmacro-prefix-map=./= -Wno-packed-not-aligned  -DMODULE  -DKBUILD_BASENAME='"dht11_drv"' -DKBUILD_MODNAME='"dht11_drv"' -c -o /home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o /home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.c
 
-source_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o := /home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.c
+source_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o := /home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.c
 
-deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o := \
+deps_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o := \
   include/linux/kconfig.h \
     $(wildcard include/config/cpu/big/endian.h) \
     $(wildcard include/config/booger.h) \
@@ -20,38 +20,85 @@ deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o :=
   include/asm-generic/param.h \
     $(wildcard include/config/hz.h) \
   include/uapi/asm-generic/param.h \
-  include/linux/wait.h \
-    $(wildcard include/config/lockdep.h) \
-  include/linux/list.h \
-    $(wildcard include/config/debug/list.h) \
-  include/linux/types.h \
-    $(wildcard include/config/have/uid16.h) \
-    $(wildcard include/config/uid16.h) \
-    $(wildcard include/config/arch/dma/addr/t/64bit.h) \
-    $(wildcard include/config/phys/addr/t/64bit.h) \
-    $(wildcard include/config/64bit.h) \
+  arch/arm/include/asm/delay.h \
+  arch/arm/include/asm/memory.h \
+    $(wildcard include/config/need/mach/memory/h.h) \
+    $(wildcard include/config/page/offset.h) \
+    $(wildcard include/config/mmu.h) \
+    $(wildcard include/config/thumb2/kernel.h) \
+    $(wildcard include/config/highmem.h) \
+    $(wildcard include/config/smp.h) \
+    $(wildcard include/config/arm/lpae.h) \
+    $(wildcard include/config/dram/base.h) \
+    $(wildcard include/config/dram/size.h) \
+    $(wildcard include/config/xip/kernel.h) \
+    $(wildcard include/config/have/tcm.h) \
+    $(wildcard include/config/arm/patch/phys/virt.h) \
+    $(wildcard include/config/phys/offset.h) \
+    $(wildcard include/config/xip/phys/addr.h) \
+    $(wildcard include/config/debug/virtual.h) \
+  include/linux/compiler.h \
+    $(wildcard include/config/trace/branch/profiling.h) \
+    $(wildcard include/config/profile/all/branches.h) \
+    $(wildcard include/config/stack/validation.h) \
+    $(wildcard include/config/kasan.h) \
+  include/linux/compiler_types.h \
   include/uapi/linux/types.h \
   arch/arm/include/uapi/asm/types.h \
   include/asm-generic/int-ll64.h \
   include/uapi/asm-generic/int-ll64.h \
   arch/arm/include/generated/uapi/asm/bitsperlong.h \
   include/asm-generic/bitsperlong.h \
+    $(wildcard include/config/64bit.h) \
   include/uapi/asm-generic/bitsperlong.h \
   include/uapi/linux/posix_types.h \
   include/linux/stddef.h \
   include/uapi/linux/stddef.h \
-  include/linux/compiler_types.h \
   arch/arm/include/uapi/asm/posix_types.h \
   include/uapi/asm-generic/posix_types.h \
+  arch/arm/include/asm/barrier.h \
+    $(wildcard include/config/cpu/32v6k.h) \
+    $(wildcard include/config/cpu/xsc3.h) \
+    $(wildcard include/config/cpu/fa526.h) \
+    $(wildcard include/config/arm/heavy/mb.h) \
+    $(wildcard include/config/arm/dma/mem/bufferable.h) \
+    $(wildcard include/config/cpu/spectre.h) \
+  include/asm-generic/barrier.h \
+  include/linux/kasan-checks.h \
+  include/linux/types.h \
+    $(wildcard include/config/have/uid16.h) \
+    $(wildcard include/config/uid16.h) \
+    $(wildcard include/config/arch/dma/addr/t/64bit.h) \
+    $(wildcard include/config/phys/addr/t/64bit.h) \
+  include/linux/const.h \
+  include/uapi/linux/const.h \
+  include/linux/sizes.h \
+  include/asm-generic/memory_model.h \
+    $(wildcard include/config/flatmem.h) \
+    $(wildcard include/config/discontigmem.h) \
+    $(wildcard include/config/sparsemem/vmemmap.h) \
+    $(wildcard include/config/sparsemem.h) \
+  include/linux/pfn.h \
+  arch/arm/include/generated/uapi/asm/param.h \
+  arch/arm/include/asm/irqflags.h \
+    $(wildcard include/config/cpu/v7m.h) \
+  arch/arm/include/asm/ptrace.h \
+    $(wildcard include/config/arm/thumb.h) \
+  arch/arm/include/uapi/asm/ptrace.h \
+    $(wildcard include/config/cpu/endian/be8.h) \
+  arch/arm/include/asm/hwcap.h \
+  arch/arm/include/uapi/asm/hwcap.h \
+  include/asm-generic/irqflags.h \
+  include/linux/wait.h \
+    $(wildcard include/config/lockdep.h) \
+  include/linux/list.h \
+    $(wildcard include/config/debug/list.h) \
   include/linux/poison.h \
     $(wildcard include/config/illegal/pointer/value.h) \
     $(wildcard include/config/page/poisoning/zero.h) \
-  include/linux/const.h \
-  include/uapi/linux/const.h \
   include/linux/kernel.h \
     $(wildcard include/config/preempt/voluntary.h) \
     $(wildcard include/config/debug/atomic/sleep.h) \
-    $(wildcard include/config/mmu.h) \
     $(wildcard include/config/prove/locking.h) \
     $(wildcard include/config/arch/has/refcount.h) \
     $(wildcard include/config/panic/timeout.h) \
@@ -70,22 +117,6 @@ deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o :=
     $(wildcard include/config/trim/unused/ksyms.h) \
     $(wildcard include/config/unused/symbols.h) \
   arch/arm/include/asm/linkage.h \
-  include/linux/compiler.h \
-    $(wildcard include/config/trace/branch/profiling.h) \
-    $(wildcard include/config/profile/all/branches.h) \
-    $(wildcard include/config/stack/validation.h) \
-    $(wildcard include/config/kasan.h) \
-  arch/arm/include/asm/barrier.h \
-    $(wildcard include/config/cpu/32v6k.h) \
-    $(wildcard include/config/thumb2/kernel.h) \
-    $(wildcard include/config/cpu/xsc3.h) \
-    $(wildcard include/config/cpu/fa526.h) \
-    $(wildcard include/config/arm/heavy/mb.h) \
-    $(wildcard include/config/arm/dma/mem/bufferable.h) \
-    $(wildcard include/config/smp.h) \
-    $(wildcard include/config/cpu/spectre.h) \
-  include/asm-generic/barrier.h \
-  include/linux/kasan-checks.h \
   include/linux/bitops.h \
   include/linux/bits.h \
   arch/arm/include/asm/bitops.h \
@@ -95,15 +126,6 @@ deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o :=
     $(wildcard include/config/preempt/tracer.h) \
     $(wildcard include/config/trace/irqflags/support.h) \
   include/linux/typecheck.h \
-  arch/arm/include/asm/irqflags.h \
-    $(wildcard include/config/cpu/v7m.h) \
-  arch/arm/include/asm/ptrace.h \
-    $(wildcard include/config/arm/thumb.h) \
-  arch/arm/include/uapi/asm/ptrace.h \
-    $(wildcard include/config/cpu/endian/be8.h) \
-  arch/arm/include/asm/hwcap.h \
-  arch/arm/include/uapi/asm/hwcap.h \
-  include/asm-generic/irqflags.h \
   include/asm-generic/bitops/non-atomic.h \
   include/asm-generic/bitops/builtin-__fls.h \
   include/asm-generic/bitops/builtin-__ffs.h \
@@ -119,7 +141,6 @@ deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o :=
   include/linux/atomic.h \
   arch/arm/include/asm/atomic.h \
     $(wildcard include/config/generic/atomic64.h) \
-    $(wildcard include/config/arm/lpae.h) \
   include/linux/prefetch.h \
   arch/arm/include/asm/processor.h \
     $(wildcard include/config/have/hw/breakpoint.h) \
@@ -223,25 +244,6 @@ deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o :=
     $(wildcard include/config/have/arch/pfn/valid.h) \
   arch/arm/include/asm/glue.h \
   arch/arm/include/asm/pgtable-2level-types.h \
-  arch/arm/include/asm/memory.h \
-    $(wildcard include/config/need/mach/memory/h.h) \
-    $(wildcard include/config/page/offset.h) \
-    $(wildcard include/config/highmem.h) \
-    $(wildcard include/config/dram/base.h) \
-    $(wildcard include/config/dram/size.h) \
-    $(wildcard include/config/xip/kernel.h) \
-    $(wildcard include/config/have/tcm.h) \
-    $(wildcard include/config/arm/patch/phys/virt.h) \
-    $(wildcard include/config/phys/offset.h) \
-    $(wildcard include/config/xip/phys/addr.h) \
-    $(wildcard include/config/debug/virtual.h) \
-  include/linux/sizes.h \
-  include/asm-generic/memory_model.h \
-    $(wildcard include/config/flatmem.h) \
-    $(wildcard include/config/discontigmem.h) \
-    $(wildcard include/config/sparsemem/vmemmap.h) \
-    $(wildcard include/config/sparsemem.h) \
-  include/linux/pfn.h \
   include/asm-generic/getorder.h \
   include/linux/bottom_half.h \
   arch/arm/include/generated/asm/mmiowb.h \
@@ -312,7 +314,6 @@ deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o :=
   include/linux/timex.h \
   include/uapi/linux/timex.h \
   include/uapi/linux/param.h \
-  arch/arm/include/generated/uapi/asm/param.h \
   arch/arm/include/asm/timex.h \
   include/linux/uidgid.h \
     $(wildcard include/config/multiuser.h) \
@@ -891,8 +892,7 @@ deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o :=
   include/asm-generic/sections.h \
   include/linux/kthread.h \
   include/linux/delay.h \
-  arch/arm/include/asm/delay.h \
 
-/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o: $(deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o)
+/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o: $(deps_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o)
 
-$(deps_/home/book/nfs_rootfs/drivers_projects/70days/03_dht11_query/dht11_drv.o):
+$(deps_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o):
