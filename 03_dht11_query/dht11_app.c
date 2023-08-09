@@ -10,13 +10,13 @@
 
 
 /*
- * ./sr04_app /dev/sr04
+ * ./dht11_app /dev/dht11
  *
  */
 int main(int argc, char **argv)
 {
 	int fd;
-	int ns;
+	unsigned char data[4];
 
 	int i;
 	
@@ -40,12 +40,13 @@ int main(int argc, char **argv)
 
 	while (1)
 	{
-		if (read(fd, &ns, 4) == 4) {
-			printf("get ns: %d us\n", ns);
-            printf("get distance: %d cm\n", ns/58000); // mm
-            printf("get distance: %d inch\n", ns/148000); // inch
-        } else
-			printf("get distance: -1\n");
+		if (read(fd, data, 4) == 4) {
+			printf("get humidity: %d.%d \n", data[0], data[1]);
+            printf("get temperature: %d.%d \n", data[2], data[3]); // mm
+        } else {
+			printf("get humidity & temperature: -1\n");
+		}
+		sleep(5);
 	}
 	
 	close(fd);

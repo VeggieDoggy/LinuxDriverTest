@@ -89,6 +89,38 @@ deps_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o :
   arch/arm/include/asm/hwcap.h \
   arch/arm/include/uapi/asm/hwcap.h \
   include/asm-generic/irqflags.h \
+  include/linux/printk.h \
+    $(wildcard include/config/message/loglevel/default.h) \
+    $(wildcard include/config/console/loglevel/default.h) \
+    $(wildcard include/config/console/loglevel/quiet.h) \
+    $(wildcard include/config/early/printk.h) \
+    $(wildcard include/config/printk/nmi.h) \
+    $(wildcard include/config/printk.h) \
+    $(wildcard include/config/dynamic/debug.h) \
+  /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/lib/gcc/arm-buildroot-linux-gnueabihf/8.4.0/include/stdarg.h \
+  include/linux/init.h \
+    $(wildcard include/config/have/arch/prel32/relocations.h) \
+    $(wildcard include/config/strict/kernel/rwx.h) \
+    $(wildcard include/config/strict/module/rwx.h) \
+  include/linux/kern_levels.h \
+  include/linux/linkage.h \
+  include/linux/stringify.h \
+  include/linux/export.h \
+    $(wildcard include/config/modversions.h) \
+    $(wildcard include/config/module/rel/crcs.h) \
+    $(wildcard include/config/modules.h) \
+    $(wildcard include/config/trim/unused/ksyms.h) \
+    $(wildcard include/config/unused/symbols.h) \
+  arch/arm/include/asm/linkage.h \
+  include/linux/cache.h \
+    $(wildcard include/config/arch/has/cache/line/size.h) \
+  include/uapi/linux/kernel.h \
+  include/uapi/linux/sysinfo.h \
+  arch/arm/include/asm/cache.h \
+    $(wildcard include/config/arm/l1/cache/shift.h) \
+    $(wildcard include/config/aeabi.h) \
+  include/linux/dynamic_debug.h \
+    $(wildcard include/config/jump/label.h) \
   include/linux/wait.h \
     $(wildcard include/config/lockdep.h) \
   include/linux/list.h \
@@ -104,19 +136,8 @@ deps_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o :
     $(wildcard include/config/panic/timeout.h) \
     $(wildcard include/config/tracing.h) \
     $(wildcard include/config/ftrace/mcount/record.h) \
-  /home/book/100ask_stm32mp157_pro-sdk/ToolChain/arm-buildroot-linux-gnueabihf_sdk-buildroot/lib/gcc/arm-buildroot-linux-gnueabihf/8.4.0/include/stdarg.h \
   include/linux/limits.h \
   include/uapi/linux/limits.h \
-  include/linux/linkage.h \
-  include/linux/stringify.h \
-  include/linux/export.h \
-    $(wildcard include/config/modversions.h) \
-    $(wildcard include/config/module/rel/crcs.h) \
-    $(wildcard include/config/have/arch/prel32/relocations.h) \
-    $(wildcard include/config/modules.h) \
-    $(wildcard include/config/trim/unused/ksyms.h) \
-    $(wildcard include/config/unused/symbols.h) \
-  arch/arm/include/asm/linkage.h \
   include/linux/bitops.h \
   include/linux/bits.h \
   arch/arm/include/asm/bitops.h \
@@ -148,9 +169,6 @@ deps_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o :
     $(wildcard include/config/arm/errata/754327.h) \
   arch/arm/include/asm/hw_breakpoint.h \
   arch/arm/include/asm/unified.h \
-  arch/arm/include/asm/cache.h \
-    $(wildcard include/config/arm/l1/cache/shift.h) \
-    $(wildcard include/config/aeabi.h) \
   arch/arm/include/asm/cmpxchg.h \
     $(wildcard include/config/cpu/sa1100.h) \
     $(wildcard include/config/cpu/sa110.h) \
@@ -173,24 +191,6 @@ deps_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_query/dht11_drv.o :
   include/linux/log2.h \
     $(wildcard include/config/arch/has/ilog2/u32.h) \
     $(wildcard include/config/arch/has/ilog2/u64.h) \
-  include/linux/printk.h \
-    $(wildcard include/config/message/loglevel/default.h) \
-    $(wildcard include/config/console/loglevel/default.h) \
-    $(wildcard include/config/console/loglevel/quiet.h) \
-    $(wildcard include/config/early/printk.h) \
-    $(wildcard include/config/printk/nmi.h) \
-    $(wildcard include/config/printk.h) \
-    $(wildcard include/config/dynamic/debug.h) \
-  include/linux/init.h \
-    $(wildcard include/config/strict/kernel/rwx.h) \
-    $(wildcard include/config/strict/module/rwx.h) \
-  include/linux/kern_levels.h \
-  include/linux/cache.h \
-    $(wildcard include/config/arch/has/cache/line/size.h) \
-  include/uapi/linux/kernel.h \
-  include/uapi/linux/sysinfo.h \
-  include/linux/dynamic_debug.h \
-    $(wildcard include/config/jump/label.h) \
   include/linux/build_bug.h \
   arch/arm/include/asm/div64.h \
   arch/arm/include/asm/compiler.h \
