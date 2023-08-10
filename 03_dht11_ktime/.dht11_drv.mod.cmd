@@ -1,0 +1,1 @@
+cmd_/home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_ktime/dht11_drv.mod := { echo  /home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_ktime/dht11_drv.o; echo; } > /home/book/nfs_rootfs/drivers_projects/drvtest/03_dht11_ktime/dht11_drv.mod
