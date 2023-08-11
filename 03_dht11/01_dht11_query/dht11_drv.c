@@ -67,8 +67,6 @@ static int dht11_wait_for_ready (void) {
     int timeout_us = 200;
     int us = 0;
 
-    printk("%s %s line %d\n", __FILE__, __FUNCTION__, __LINE__);
-
     /* wait for low level */
     while (gpiod_get_value(dht11_gpiod) && --timeout_us) {
         udelay(1);
