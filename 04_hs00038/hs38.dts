@@ -1,0 +1,4 @@
+mygpiodev {
+    compatible = "liuq,gpiodev";
+    gpios = <&gpioa 5 GPIO_ACTIVE_HIGH>;
+}
